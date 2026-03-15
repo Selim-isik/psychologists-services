@@ -1,0 +1,283 @@
+.card {
+  background: #fbfbfb;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 1184px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.avatarWrapper {
+  flex-shrink: 0;
+}
+
+.avatarBorder {
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(52, 112, 255, 0.2);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.avatarImg {
+  width: 96px;
+  height: 96px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.onlineStatus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 12px;
+  top: 12px;
+  background: #38cd3e;
+  border: 2px solid #fbfbfb;
+  border-radius: 50%;
+}
+
+.infoWrapper {
+  flex: 1;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8a8a89;
+}
+
+.name {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #191a15;
+  margin: 0;
+}
+
+.statsBlock {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rating,
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #191a15;
+}
+
+.priceValue {
+  color: #38cd3e;
+}
+
+.statsDivider {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(25, 26, 21, 0.2);
+}
+
+.heartBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 12px;
+  color: #191a15;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.heartBtn:hover {
+  transform: scale(1.1);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.tag {
+  background: #f3f3f3;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8a8a89;
+}
+
+.tag span {
+  color: #191a15;
+}
+
+.about {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(25, 26, 21, 0.5);
+  margin-bottom: 14px;
+}
+
+.readMore {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: #191a15;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reviewsSection {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviewUser {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewAvatar {
+  width: 44px;
+  height: 44px;
+  background: rgba(52, 112, 255, 0.2);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #3470ff;
+}
+
+.reviewerName {
+  font-weight: 500;
+  font-size: 16px;
+  color: #191a15;
+  margin: 0;
+}
+
+.reviewerRating {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.reviewComment {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(25, 26, 21, 0.5);
+  margin: 0;
+}
+
+.appointmentBtn {
+  margin-top: 40px;
+  padding: 14px 32px;
+  background: #3470ff;
+  color: #fbfbfb;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s ease;
+}
+
+.appointmentBtn:hover {
+  background: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .headerRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .nameBlock {
+    align-items: center;
+  }
+  .statsBlock {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .tags {
+    justify-content: center;
+  }
+  .reviewUser {
+    flex-direction: column;
+    text-align: center;
+  }
+  .appointmentBtn {
+    margin: 30px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 16px;
+  }
+  .statsDivider {
+    display: none;
+  }
+  .appointmentBtn {
+    width: 100%;
+  }
+}
